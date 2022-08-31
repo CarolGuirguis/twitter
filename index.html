@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="background" class="container-fluid blue">
+            <div id="twitterpage" class="card twitterpage" >
+              <div class="row">
+                <div class="col">
+                  
+                  <div>
+                    <i class='fa fa-arrow-left'></i>
+                  <label id="firstprofilename" class="profilename">Profile Name</label>
+                </div>
+              <div>
+                  <label class="tweetsnumber">125.7k Tweets</label>
+                </div>
+                </div>
+                <div class="col">
+                  <div class="left4">
+                    <label id="themelabel" class="themetext">Light Theme</label>
+                    <div id="toggle" class='toggle'>
+                    <i id="indicator" class='indicator' onclick="myFunction()"></i>
+                     </div>
+                  </div>
+                </div>
+              </div>
+                <div class="card-body">
+                  <div id="cardbody" class="cardbody">
+                    <div class="row">
+                      <div class="col">
+                        <img id="profilepic1" class="profilepic" >
+                      </div>
+                      <div class="col">
+                       <div id="editp" class="editp">Edit Profile</div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div>
+                          <label id="secondprofilename"  class="profilename2">Profile Name </label>
+                          <label id="icon" class="iconlight"><iconify-icon icon="iconoir:verified-badge"></iconify-icon></label>
+                        </div>
+                        <div>
+                          <label class="username">@username</label>
+                        </div>
+                        <div>
+                          <label class="bio">Your Bio Put Here</label>
+                          <br/>
+                          <label class="location"><i class="fa fa-map-marker" aria-hidden="true"></i> Location &nbsp;</label>
+                          <label class="joined"><i class="fa fa-calendar" aria-hidden="true"></i> Join Since 2021</label>
+                          <br/>
+                          
+                          <label id="no1" class="number left">256</label>
+                          <label class="following">Following</label>
+                          <label id="no2" class="number">165</label>
+                          <label class="followers">Followers</label>
+                        
+                        </div>
+                        <div>
+                          <ul  class="navitems">
+                            <li id="li1" class="underline">Tweets</li>
+                            <li id="li2">Tweets and Replies</li>
+                            <li id="li3">Media</li>
+                            <li id="li4">Likes</li>
+                          </ul>
+                          <hr class="line"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-2">
+                        <img  id="profilepic2" class="profilepicsecond" >
+                      </div>
+                      <div class="col-8">
+                        <div>
+                          <label id="thirdprofilename"  class="profilenamesecond">Profile Name</label>
+                          <label class="usernamesecond"><iconify-icon id="icon2" class="iconlight" icon="iconoir:verified-badge"></iconify-icon>@username - 32m</label>
+                        </div>
+                        <div class="text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                          Hic nihil fuit, quod quaerermus.
+                        </div>
+                        <div>
+                          <label class="left grey"><i class="fa fa-comment-o" aria-hidden="true"></i>568k</label>
+                          <label class="left grey"><i class="fa fa-retweet" aria-hidden="true"></i>75k</label>
+                          <label class="left grey"><i class="fa fa-heart-o" aria-hidden="true"></i>157</label>
+                          <label class="left grey"><i class="fa fa-upload" aria-hidden="true"></i></label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="dots">. . .</div>
+                        
+                      </div>
+                     
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <hr class="line2"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <select onchange="changeColor(this)">
+                    <option selected="true" disabled="disabled">Select Background color</option>    
+                    <option value="#44b1f6">Blue</option>
+                    <option value="red">Red</option>
+                    
+                  </select>
+              </div>
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
